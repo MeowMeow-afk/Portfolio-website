@@ -170,3 +170,18 @@ img {
 .about h2 {
   font-weight: 5px;
 }
+.work_inner {
+  display: flex;
+  gap: 170px;
+  font-family: "Arimo", sans-serif;
+}
+.work_inner h3 {
+  word-spacing: 6px;
+  padding-left: 20px;
+}
+.work_inner a {
+  text-decoration: none;
+  color: black;
+  word-spacing: 2px;
+  margin: 0;
+}
