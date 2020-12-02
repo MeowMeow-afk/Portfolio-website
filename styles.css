@@ -172,16 +172,19 @@ img {
 }
 .work_inner {
   display: flex;
-  gap: 170px;
+  gap: 50px;
   font-family: "Arimo", sans-serif;
 }
-.work_inner h3 {
-  word-spacing: 6px;
-  padding-left: 20px;
+.topic {
+  width: 190px;
+  text-align: center;
 }
 .work_inner a {
   text-decoration: none;
   color: black;
   word-spacing: 2px;
   margin: 0;
+}
+.about_work {
+  text-align: left;
 }
