@@ -188,3 +188,8 @@ img {
 .about_work {
   text-align: left;
 }
+.github_img {
+  float: right;
+  padding-right: 32rem;
+  height: 20px;
+}
