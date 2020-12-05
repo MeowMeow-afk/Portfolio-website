@@ -4,39 +4,34 @@ body {
   display: flex;
   flex-direction: column;
 }
-.container-1 {
-  background-image: linear-gradient(to bottom, #89bdec 55%, white);
-  text-align: center;
-  position: relative;
+@font-face {
+  font-family: myFont;
+  src: url(LOVE-BOX-demo.ttf);
 }
-.inner_container {
-  position: relative;
+.container-1 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
+  height: 500px;
+  gap: 14px;
+  background-image: linear-gradient(to bottom, #111, #111);
 }
-.container-1 h1 {
-  position: absolute;
-  top: 0;
-  right: auto;
-  font-family: "Pacifico";
-  margin-top: 45px;
-  font-size: 50px;
-}
-.container-1 h3 {
+
+.container-1 > h3 {
   font-family: "Arimo";
-}
-.mapic {
-  position: relative;
-  right: 200px;
-  width: 180px;
-  height: 180px;
 }
 .underline {
   font-size: 30px;
 }
 .highlight {
+  margin-top: 15px;
   display: inline-block;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  font-size: 40px;
 }
 .highlight .underline {
   position: relative;
@@ -50,7 +45,7 @@ body {
   right: 0;
   bottom: -5px;
   height: 0.3rem;
-  background-color: rgb(0, 144, 158);
+  background-color: rgb(255, 255, 255);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s;
@@ -59,22 +54,26 @@ body {
   transform: scaleX(1);
   transform-origin: left;
 }
-img {
-  display: block;
+.glitch {
+  word-spacing: 2px;
+  font-family: myFont;
+  font-size: 100px;
+  text-transform: uppercase;
+  position: relative;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  margin-bottom: 0;
 }
-.cloud1 {
+.glitch span {
   position: absolute;
-  top: 10px;
-  left: 40px;
-  margin: 0 40% 0 60%;
+  top: 0;
+  left: 0;
 }
-.cloud2 {
-  position: absolute;
-  left: 30px;
-  margin: 0 auto 0 20%;
-}
-.mountain {
-  margin: 0 auto 0 auto;
+.glitch span:first-child {
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
+  transform: translateX(-2px);
 }
 .horizontal_line {
   border-bottom: 2px solid black;
@@ -144,7 +143,7 @@ img {
   margin: 40px 90px;
 }
 .footer {
-  background-color: #89bdec;
+  background-color: #111;
   text-align: center;
   height: 200px;
 }
@@ -157,6 +156,7 @@ img {
   cursor: pointer;
   display: inline;
   margin: auto 30px;
+  height: 30px;
 }
 .links {
   padding: 40px;
@@ -166,6 +166,7 @@ img {
   font-family: "Arimo", sans-serif;
   text-align: left;
   line-height: 2;
+  color: aliceblue;
 }
 .about h2 {
   font-weight: 5px;
