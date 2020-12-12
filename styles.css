@@ -173,12 +173,12 @@ body {
 }
 .work_inner {
   display: flex;
-  gap: 50px;
+  gap: 70px;
   font-family: "Arimo", sans-serif;
 }
 .topic {
-  width: 190px;
-  text-align: center;
+  width: 270px;
+  text-align: left;
 }
 .work_inner a {
   text-decoration: none;
@@ -187,10 +187,14 @@ body {
   margin: 0;
 }
 .about_work {
+  width: 100%;
   text-align: left;
 }
+.about_work_inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .github_img {
-  float: right;
-  padding-right: 32rem;
-  height: 20px;
+  height: 18px;
 }
