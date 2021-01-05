@@ -13,6 +13,13 @@ body {
   font-family: myquote;
   src: url(NOW_YOU_SEE_ME.ttf);
 }
+.main__container {
+  position: relative;
+  min-height: 100%;
+}
+.main1 {
+  padding-bottom: 200px;
+}
 .container-1 {
   display: flex;
   flex-direction: column;
@@ -158,12 +165,28 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+.other-stuff {
+  font-family: "Arimo", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.other-stuff > h2,
+p {
+  margin: 9px auto;
+}
 .other-stuff .img img {
   width: 110px;
   height: 110px;
   margin: 40px 90px;
 }
+.projects {
+  font-family: "Arimo", sans-serif;
+}
 .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background-color: #111;
   text-align: center;
   height: 200px;
@@ -171,6 +194,7 @@ body {
 .inner-footer {
   margin-top: 25px;
   display: flex;
+  gap: 90px;
   justify-content: center;
 }
 .links img {
@@ -180,8 +204,9 @@ body {
   height: 30px;
 }
 .links {
-  padding: 40px;
-  margin-left: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .about {
   font-family: "Arimo", sans-serif;
